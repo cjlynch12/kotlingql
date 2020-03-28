@@ -9,14 +9,6 @@ Simple back end boiler plate for a Spring Boot/GraphQL Web server written in Kot
 ### Setup
 #### Environment Variables
 * Create `application.yml` in the /src/resources dir with following:
-
-#### GraphQL playground
-* Interact with GraphQL queries and migrations from `http://localhost:8080/playground`
-
-### DB Migrations
-Migrations are handled by flyway.
-Simply create a new file in `/resources/migration` like `V1__init.sql` and flyway will apply the migration on application boot.
-
 ```
 graphql:
   packages:
@@ -28,6 +20,14 @@ spring:
     password: <password>
     driverClassName: "org.postgresql.Driver"
 ```
+
+#### GraphQL playground
+* Interact with GraphQL queries and migrations from `http://localhost:8080/playground`
+
+### DB Migrations
+Migrations are handled by flyway.
+Simply create a new file in `/resources/migration` like `V1__init.sql` and flyway will apply the migration on application boot.
+
 
 ### Reference Documentation
 * [Official Gradle documentation](https://docs.gradle.org)
