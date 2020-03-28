@@ -1,0 +1,9 @@
+graphql:
+  packages:
+    - "com.clynch.kotlingql"
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kotlingql
+    username: "test"
+    password: "admin"
+    driverClassName: "org.postgresql.Driver"
